@@ -451,10 +451,10 @@ void Calculate_MSE(vector<variant<float, string>> individual, int Max_level, str
 
 	for (int i = 0; i < point_x.size(); i++)
 	{
-		for (int leaf = pow(2, Max_level) - 2; leaf >= 0; leaf--) //´Ó×îºóÒ»Æ¬Ò¶×Ó¿ªÊ¼Ëã
+		for (int leaf = pow(2, Max_level) - 2; leaf >= 0; leaf--) //ä»æœ€åä¸€ç‰‡å¶å­å¼€å§‹ç®—
 		{
 			string item = get<string>(individual[leaf]);
-			// Èç¹ûÊÇÔËËã·û
+			// å¦‚æœæ˜¯è¿ç®—ç¬¦
 			if (std::find(Operators_vector.begin(), Operators_vector.end(), item) != Operators_vector.end())
 			{
 				if (item == "+")
@@ -647,10 +647,10 @@ void Crossover(vector<variant<float, string>>& parent_1, vector<variant<float, s
 Child Get_child(vector<vector<variant<float, string>>>& population_p, vector<int>& parents_pool_p, int Max_level, string Operators[], float pm)
 {
 	/*
-		1.Ëæ»úÔÚ¸¸±¾³ØÖĞÑ¡ÔñÁ½¸ö¸¸±¾
-		2.Ëæ»úÑ¡ÔñÒ»¸öµãÎ»½øĞĞÔÓ½»
-		3.ÓĞÒ»¶¨¸ÅÂÊ·¢ÉúÍ»±ä
-		4.·µ»Ø×Ó´ú
+		1.éšæœºåœ¨çˆ¶æœ¬æ± ä¸­é€‰æ‹©ä¸¤ä¸ªçˆ¶æœ¬
+		2.éšæœºé€‰æ‹©ä¸€ä¸ªç‚¹ä½è¿›è¡Œæ‚äº¤
+		3.æœ‰ä¸€å®šæ¦‚ç‡å‘ç”Ÿçªå˜
+		4.è¿”å›å­ä»£
 	*/
 	std::random_device rd;
 	std::default_random_engine eng(rd());
