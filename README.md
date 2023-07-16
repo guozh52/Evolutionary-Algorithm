@@ -1,5 +1,5 @@
 # Evolutionary-Algorithm
-This project is implemented in c++ and demostracted the power and flexibility of #Evolutionary Algorithm# in different domains.
+This project is implemented in c++ and demostracted the power and flexibility of **Evolutionary Algorithm** in different domains.
 
 ## Travel Salesman Problem
 ![](https://github.com/guozh52/Evolutionary-Algorithm/blob/main/TSP_circle.gif)
