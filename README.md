@@ -2,6 +2,7 @@
 This project is implemented in c++ and demostracted the power and flexibility of **Evolutionary Algorithm** in different domains.
 
 ## Travel Salesman Problem 邮差问题
+Traveling Salesman Problem (TSP), which is a classic problem in computer science, combinatorial optimization, and operations research.
 ![](https://github.com/guozh52/Evolutionary-Algorithm/blob/main/TSP_circle.gif)
 
 ## Symbolic Regression 符号回归
